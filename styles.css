@@ -28,3 +28,45 @@ body {
    padding:0.5em;
    text-decoration:none;
 }
+
+.items {
+   width: 80%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 1em;
+}
+.items img {
+   width: 100%;
+   height: auto;
+}
+
+.item {
+   border: rgba(0, 0, 0, 0.201) 1px;
+   background-color: cornflowerblue;
+}
+
+.item img{
+   border-radius: 5%;
+   border-color: darkblue;
+   }
+
+.item p{
+   font-style: arial;
+   font-size: large;
+}
+
+.item p:nth-child(1) {
+   font-weight: lighter;
+}
+
+.item p:nth-child(2) {
+   font-weight: bold;
+}
+
+.item button {
+   border-radius: 5%;
+   padding: 10px 20px 10px 20px;
+   background-color: darkgray;
+}
+
