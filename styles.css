@@ -9,7 +9,11 @@ body {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   background-color: bisque;
+   background-color: rgb(165, 192, 208);
+   border-bottom: rgba(0, 0, 0, 0.167) 1px;
+   font-family:'Arial Narrow', sans-serif;
+   font-variant: small-caps;
+   font-size: 1.25em;
 }
 
 .page-header ul{
