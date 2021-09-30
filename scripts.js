@@ -5,7 +5,7 @@ const itemList = document.getElementById('item-list')
 const cartQty = document.getElementById('cart-qty')
 const cartTotal = document.getElementById('cart-total')
 
-console.log(itemList)
+
 
 
 for (let i = 0; i < data.length; i += 1) {
@@ -29,6 +29,17 @@ for (let i = 0; i < data.length; i += 1) {
 	button.innerHTML = "Add to Cart"
 	newDiv.appendChild(button)
 }
+
+//--------------------------------------------
+// button feature
+
+const all_items_button = Array.from(document.querySelectorAll('button'))
+
+all_items_button.forEach(elt => elt.addEventListener('click', () => {
+	addItem(elt.getAttribute('id'), elt.getAttribute('data-price'))
+	showItems()
+ }))
+
 //--------------------------------------------
 // Start of shopping cart feature
 
@@ -67,7 +78,9 @@ function showItems() {
 	}
 
 	itemList.innerHTML = itemStr
+
 	//console.log(`Total in cart: $${getTotal()}`)
+	
 	cartTotal.innerHTML = `Total in cart: $${getTotal()}`
 }
 
@@ -107,6 +120,9 @@ function removeItem(name, qty = 0) {
 		}
 	}
 }
+
+
+console.log(all_items_button)
 
          //--------------------------------------------
          // Test code begins
