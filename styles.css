@@ -77,9 +77,23 @@ body {
    display: flex;
    flex-direction: row;
    justify-content: left;
-   background-color: rgb(168, 214, 241);
-   border-bottom: rgba(0, 0, 0, 0.167) 1px;
+   background-color: rgb(237, 252, 98);
+   border-bottom: rgba(82, 79, 79, 0.167) 1px;
    font-family:'Arial Narrow', sans-serif;
    font-variant: small-caps;
    font-size: 1.25em;
+}
+
+.page-footer li {
+
+   list-style-type: none;
+   font: bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+   background: #395870;
+   background: linear-gradient(#21282e, #0a436e);
+   border-right: 1px solid rgba(0, 0, 0, .3);
+   color: #fff;
+   padding: 12px 20px;
+   text-decoration: none;
+   
 }
