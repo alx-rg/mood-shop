@@ -44,6 +44,7 @@ body {
 .item {
    border: rgba(0, 0, 0, 0.201) 1px;
    background-color: cornflowerblue;
+   
 }
 
 .item img{
@@ -65,8 +66,20 @@ body {
 }
 
 .item button {
-   border-radius: 5%;
+   width:100%;
+   border-radius: 10%;
    padding: 10px 20px 10px 20px;
    background-color: darkgray;
+   
 }
 
+.page-footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: left;
+   background-color: rgb(168, 214, 241);
+   border-bottom: rgba(0, 0, 0, 0.167) 1px;
+   font-family:'Arial Narrow', sans-serif;
+   font-variant: small-caps;
+   font-size: 1.25em;
+}
